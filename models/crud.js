@@ -1,12 +1,7 @@
-'use strict';
-
 const mongoose = require('mongoose');
 
-
-let Crud = mongoose.model('Crud', {
-  name:String
+const Crud = mongoose.model('Crud', {
+  name: String,
 });
-
-
 
 module.exports = Crud;
