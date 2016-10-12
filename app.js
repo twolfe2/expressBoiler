@@ -15,6 +15,15 @@ let bodyParser = require('body-parser');
 
 let app = express();
 
+//Database setup
+let mongoose = require('mongoose');
+
+let mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/tempdb';
+
+mongoose.connect(mongoUrl, err => {
+  console.log(err ||  `MongoDB connected at ${mongoUrl}`);
+})
+
 
 let server = http.createServer(app);
 

@@ -34,7 +34,8 @@
     "mongoose": "^4.5.2",
     "morgan": "^1.7.0",
     "request": "^2.74.0",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "mongoose": "^4.5.2"
   },
   "devDependencies": {
     "eslint": "^3.2.2",
